@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    transition: all .3s;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      height: 1px;
+      left: 0;
+      width: 100%;
+      background-color: #000;
+      transition: height .3s;
+    }
+  }
+}

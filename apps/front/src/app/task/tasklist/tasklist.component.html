@@ -1,0 +1,7 @@
+<div class="card">
+  <h1>Tasks</h1>
+  <nx-tests-task
+    *ngFor="let task of tasks$ | async; index as i"
+    [data]="task">
+  </nx-tests-task>
+</div>

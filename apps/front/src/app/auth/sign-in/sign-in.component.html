@@ -1,0 +1,12 @@
+<div class="login card">
+  <h1>Sign IN</h1>
+  <form class="form" [formGroup]="loginForm" (submit)="onSubmit()">
+    <div class="form__group">
+      <input type="text" placeholder="Email" formControlName="email"/>
+    </div>
+    <div class="form__group">
+      <input type="text" placeholder="Password" formControlName="password"/>
+    </div>
+    <input type="submit" value="Inscription"/>
+  </form>
+</div>

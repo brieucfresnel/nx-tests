@@ -1,0 +1,1 @@
+export const globalResourcePrefix = 'api';
